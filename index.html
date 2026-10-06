@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Athletic AI</title>
+<meta name="description" content="Athletic AI builds client programs and tracks progress for personal trainers and gyms. You approve everything. $95/month per agent, first month free.">
+<meta name="theme-color" content="#000000">
+<meta property="og:title" content="Athletic AI">
+<meta property="og:description" content="Stop building programs by hand. Your agent drafts client programs and tracks progress. You approve everything.">
+<meta property="og:image" content="assets/og-image.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Barlow:wght@400;500;600&family=Saira:ital,wdth,wght@0,100..125,500..900;1,100..125,500..900&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!--CONTENT-START-->
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="Athletic AI home">
+      <img class="brand-mark" src="assets/logo-mark.png" alt="" width="240" height="152">
+      <img class="brand-word" src="assets/logo-wordmark.png" alt="Athletic AI" width="480" height="104">
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#how">How it works</a>
+      <a href="#control">You approve</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+    <a class="btn btn-solid btn-sm" href="mailto:gavinrtodd15@gmail.com?subject=Book%20my%20Athletic%20AI%20agent">Book your agent</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <h1 class="display">Stop building programs by hand.</h1>
+        <p class="lede">Your Athletic AI agent drafts each client's program and tracks their progress. You review it, adjust it, and approve it. You get your hours back for coaching.</p>
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="mailto:gavinrtodd15@gmail.com?subject=Book%20my%20Athletic%20AI%20agent">Book your agent today</a>
+          <a class="btn btn-ghost" href="#pricing">See pricing</a>
+        </div>
+        <p class="hero-note">$95 a month per agent. Your first month is free.</p>
+      </div>
+
+      <figure class="program" aria-label="Example of a program draft waiting for trainer approval">
+        <div class="program-head">
+          <span class="chip">Example draft</span>
+          <p class="program-client">Strength block, 3 days a week, home gym, intermediate</p>
+        </div>
+        <div class="table-scroll">
+          <table class="program-table">
+            <caption class="sr-only">Four-week progression for day A</caption>
+            <thead>
+              <tr><th scope="col">Day A</th><th scope="col">Wk 1</th><th scope="col">Wk 2</th><th scope="col">Wk 3</th><th scope="col">Wk 4</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Back squat</th><td>4×6<span>70%</span></td><td>4×5<span>75%</span></td><td>5×4<span>80%</span></td><td class="deload">3×5<span>65%</span></td></tr>
+              <tr><th scope="row">Romanian deadlift</th><td>3×8</td><td>3×8</td><td>4×6</td><td class="deload">2×8</td></tr>
+              <tr><th scope="row">DB bench press</th><td>3×10</td><td>3×10</td><td>4×8</td><td class="deload">2×10</td></tr>
+              <tr><th scope="row">Split squat</th><td>3×8</td><td>3×10</td><td>3×12</td><td class="deload">2×8</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="program-foot">
+          <p class="status" id="program-status" aria-live="polite"><span class="dot"></span><span id="status-text">Waiting on your approval</span></p>
+          <div class="program-actions">
+            <button class="btn btn-ghost btn-sm" type="button" id="edit-btn">Edit</button>
+            <button class="btn btn-solid btn-sm" type="button" id="approve-btn">Approve</button>
+          </div>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section class="band band-quiet" id="problem">
+    <div class="wrap">
+      <h2 class="h2">Where a coach's day goes</h2>
+      <ul class="pains">
+        <li><strong>Building programs by hand</strong>Hours of it, for every client, every block.</li>
+        <li><strong>Tracking that lives everywhere</strong>Notes apps, spreadsheets, and text threads.</li>
+        <li><strong>Stalled progress nobody catches</strong>Until a client is already frustrated.</li>
+        <li><strong>Admin stacked on top of coaching</strong>That's how trainers burn out.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="band" id="how">
+    <div class="wrap">
+      <div class="section-intro">
+        <h2 class="h2">Program Builder &amp; Tracker</h2>
+        <p>Builds client programs and tracks progress, so you stop living in spreadsheets. Here's the loop it runs for every client.</p>
+      </div>
+      <ol class="loop">
+        <li>
+          <h3>You give it the client</h3>
+          <p>Goals, schedule, available equipment, and experience level.</p>
+        </li>
+        <li>
+          <h3>It drafts the program</h3>
+          <p>Progressive overload and phase planning, built in from the start.</p>
+        </li>
+        <li>
+          <h3>You review and approve</h3>
+          <p>Change anything. Nothing goes to a client until you sign off.</p>
+        </li>
+        <li>
+          <h3>It tracks the training</h3>
+          <p>Logs workouts and adherence, and turns them into progress reports and trends.</p>
+        </li>
+        <li>
+          <h3>It flags what needs you</h3>
+          <p>Stalled progress and missed sessions get flagged, with suggested adjustments for you to approve.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Control -->
+  <section class="band band-quiet" id="control">
+    <div class="wrap control-grid">
+      <div class="control-lead">
+        <h2 class="h2">You're the coach. It's the assistant.</h2>
+        <p>The agent drafts and suggests. You decide. Every program is reviewed by you before a client ever sees it.</p>
+      </div>
+      <dl class="rules">
+        <div><dt>You approve everything</dt><dd>You set the rules and sign off on every program and every change.</dd></div>
+        <div><dt>It programs like you</dt><dd>Drafts are built from your programming decisions, not a generic template.</dd></div>
+        <div><dt>No medical advice</dt><dd>It never gives injury or medical advice. Anything health-related goes straight to you.</dd></div>
+        <div><dt>No tech skills needed</dt><dd>Simple enough for any coach to pick up and use.</dd></div>
+        <div><dt>Client data stays private</dt><dd>Your clients' information is handled properly and kept private.</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- Who it's for -->
+  <section class="band" id="who">
+    <div class="wrap">
+      <h2 class="h2">Built for</h2>
+      <ul class="who">
+        <li>Independent personal trainers</li>
+        <li>Online coaches</li>
+        <li>Small gyms and boutique studios</li>
+        <li>Strength and performance coaches</li>
+        <li>Gym owners managing multiple trainers</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="band band-quiet" id="pricing">
+    <div class="wrap pricing-grid">
+      <div class="pricing-copy">
+        <h2 class="h2">One price. First month on us.</h2>
+        <p>Try the Program Builder &amp; Tracker free for your first month. After that it's a flat monthly price per agent.</p>
+      </div>
+      <div class="price-card">
+        <p class="price-name">Program Builder &amp; Tracker</p>
+        <p class="price"><span class="price-num">$95</span><span class="price-per">/ month per agent</span></p>
+        <p class="price-free">First month free</p>
+        <ul class="price-list">
+          <li>Program drafts from client goals, schedule, equipment, and experience</li>
+          <li>Progressive overload and phase planning</li>
+          <li>Workout logging and adherence tracking</li>
+          <li>Progress reports and trends</li>
+          <li>Flags for stalled progress and missed sessions</li>
+        </ul>
+        <a class="btn btn-solid btn-block" href="mailto:gavinrtodd15@gmail.com?subject=Book%20my%20Athletic%20AI%20agent">Book your agent today</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coming next -->
+  <section class="band" id="next">
+    <div class="wrap">
+      <h2 class="h3">Coming next</h2>
+      <ul class="next">
+        <li><strong>Client Maintenance Agent.</strong> Session reminders, no-show follow-up, check-ins, renewals, and re-engaging quiet clients.</li>
+        <li><strong>Lead intake and sales agent</strong></li>
+        <li><strong>Nutrition tracking agent</strong></li>
+        <li><strong>Gym-wide dashboards</strong></li>
+        <li><strong>Multi-trainer management</strong> for gym owners</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="cta" id="book">
+    <div class="wrap cta-inner">
+      <h2 class="display display-sm">Book your agent today.</h2>
+      <p>Email us and we'll get your agent set up. Your first month is free.</p>
+      <div class="email-row">
+        <a class="btn btn-solid" href="mailto:gavinrtodd15@gmail.com?subject=Book%20my%20Athletic%20AI%20agent">Email to book</a>
+        <span class="email-text" id="email-text">gavinrtodd15@gmail.com</span>
+        <button class="copy-btn" type="button" id="copy-btn" aria-describedby="email-text">Copy email</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <img class="footer-logo" src="assets/logo-stacked.png" alt="Athletic AI" width="900" height="675">
+    <div class="footer-links">
+      <a href="https://www.instagram.com/athleticai_/" target="_blank" rel="noopener">Instagram @athleticai_</a>
+      <a href="mailto:gavinrtodd15@gmail.com">gavinrtodd15@gmail.com</a>
+    </div>
+    <p class="footer-copy">© 2026 Athletic AI</p>
+  </div>
+</footer>
+<!--CONTENT-END-->
+<script src="main.js"></script>
+</body>
+</html>
